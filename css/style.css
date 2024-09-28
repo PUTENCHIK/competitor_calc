@@ -1,0 +1,166 @@
+body {
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+input {
+    font-size: 12px;
+    height: 30px;
+    padding: 5px 5px 5px 10px;
+
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+
+    background-color: #dfdfdf;
+    color: #212121;
+}
+
+input:hover {
+    background-color: #cfcfcf;
+    color: #131313;
+}
+
+.button {
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+
+    user-select: none;
+    color: #000000;
+    font-size: 14px;
+    transition-duration: 0.3s;
+}
+
+.button_text {
+    user-select: none;
+    color: #000000;
+}
+
+.button:hover {
+    background-color: #e4e4e4;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* width: 500px; */
+    margin: 0 auto;
+
+    outline: 1px solid grey;
+}
+
+.container > :not(:last-child):not(h1) {
+    margin-bottom: 30px;
+}
+
+.competitors {
+    display: flex;
+    flex-direction: column;
+}
+
+.competitors > .comp {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.competitors > .comp:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.comp > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comp > form > :not(:last-child) {
+    margin-bottom: 10px;
+}
+
+form > .form-head {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+form > .form-head > :not(:last-child) {
+    margin-right: 20px;
+}
+
+.form-head > .comp-number {
+    display: flex;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+
+    background-color: #cfcfcf;
+}   
+
+.comp-number > .__content {
+    margin: auto;
+}
+
+form > .inputs-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    row-gap: 10px;
+}
+
+.inputs-box > label.input-label:not(:last-child) {
+    margin-right: 20px;
+}
+
+label.input-label > p.input-text {
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.inputs-box input {
+    width: 100px;
+}
+
+.form-head > .button-delete {
+    /* display: block; */
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #808080;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    user-select: none;
+}
+
+.button-delete:hover {
+    background-color: #ff0000;
+}
+
+.button-delete > .__content {
+    display: block;
+    content: "\00d7";
+    color: #808080;
+    font-size: 20px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 1px solid black;
+}
