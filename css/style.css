@@ -149,7 +149,7 @@ label.input-label > p.input-text {
     background-color: #ff0000;
 }
 
-.button-delete > .__content {
+.button-delete::before {
     display: block;
     content: "\00d7";
     color: #808080;
